@@ -1,7 +1,8 @@
 name: Issue Info
 on:
   issues:
-    types: [opened]
+    types:
+      - opened
   workflow_dispatch:
 jobs:
   IssueCreated:

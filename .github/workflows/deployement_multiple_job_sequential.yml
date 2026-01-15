@@ -2,7 +2,7 @@ name: Deployment Workflow with Multiple Jobs - Sequential
 on: 'push'
 jobs:
   lint:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
@@ -53,7 +53,7 @@ jobs:
         run: npm run build
   deploy:
     needs: build
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Simulating Deployement...
         run: "echo Deploying..."

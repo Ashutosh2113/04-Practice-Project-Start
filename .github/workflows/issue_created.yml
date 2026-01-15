@@ -4,7 +4,7 @@ on:
     type: opened
 jobs:
   IssueCreated:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Event Information
         run: echo ${{ toJSON(github.event) }}

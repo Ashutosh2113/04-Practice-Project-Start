@@ -1,7 +1,8 @@
-name: Issue Info!
+name: Issue Info
 on:
   issues:
     types: [opened]
+  workflow_dispatch
 jobs:
   IssueCreated:
     runs-on: ubuntu-latest

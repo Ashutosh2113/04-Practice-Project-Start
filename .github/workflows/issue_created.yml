@@ -1,7 +1,7 @@
 name: Issue Info
 on: workflow_dispatch
 jobs:
-  IssueCreated:
+  Issue-Created:
     runs-on: ubuntu-latest
     steps:
       - name: Event Information
